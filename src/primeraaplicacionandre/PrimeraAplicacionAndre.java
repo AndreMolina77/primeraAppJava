@@ -28,10 +28,39 @@ public class PrimeraAplicacionAndre {
         
        System.out.print("El resultado de sumar es: "+ sumar(2,5));
         
-        
-        
     }
+        //Las clases van afuera de la clase main, como main ya es una clase.
+        class Persona {
+        
+            //las clases crean objetos personalizados con sus respectivos atributos.
+            
+            String nombre;
+            double altura;
+            String nacionalidad;
+            
+            //Si quiero solo asignarle dos valores, no todos, se tienen que crear constructores.
+            //Los constructores crean objetos con los valores que deseamos.
+            
+            //constructores
+            //los constructores crean objetos personalizados a partir de esa clase
+            
+            public Persona(String nombre, double altura){
+             this.nombre = "Seraphine";
+             this.altura = 1.70;
+            }
+            
+            public Persona(String nombre)
+            {
+                this.nombre = "Andre";
+            }
+            
+        }
     
+        
+        //Creamos un objetos clase Persona
+                Persona objPersona = new Persona("Andre");
+        
+        
     //mètodos y funciones; los mètodos van adentro de una clase, y las funciones afuera de las clases
     //como ahora mismo estamos en una clase, estamos  haciendo un mètodo.
     
@@ -71,6 +100,6 @@ public class PrimeraAplicacionAndre {
     
     }
     
-}
+
 
 
